@@ -1,4 +1,10 @@
 package builder;
 
-public class Client {
+import lombok.ToString;
+import lombok.experimental.SuperBuilder;
+
+@SuperBuilder
+@ToString
+public class Client extends User {
+    private String email;
 }
